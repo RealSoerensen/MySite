@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <title>Soerensen's site</title>
+        <link rel="icon" href="assets/pfp.png"/>
+        <meta charset="UTF-8"/>
+        <meta property="og:title" content="Soerensen's site"/>
+        <meta property="og:image" content="assets/pfp.png"/>
+        <meta property="og:description" content="This is my website where all of my projects are displayed for others to use! Check it out :D"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&amp;display=swap" rel="stylesheet"/>
+        <link href="assets/style.css" rel="stylesheet" type="text/css"/>
+        </head>
+    <body>
+        <iframe id="background" src="https://constellation.dkeree.repl.co/"></iframe>
+        <div id="container">
+            <div id="header-wrapper">
+                <h1 id="header"><b>Soerensen's site</b></h1>
+            </div>
+            <div id="info-container">
+                <div id="socials-container">
+                    <div class="socials-widget middle-widget">
+                        <img class="socials-image" src="assets/github.png">
+                    </div>
+                    <div class="socials-widget middle-widget">
+                        <img class="socials-image" src="assets/twitter.png">
+                    </div>
+                    <div class="socials-widget middle-widget">
+                        <img class="socials-image" src="assets/reddit.png">
+                    </div>
+                    <div class="socials-widget middle-widget">
+                        <img class="socials-image" src="assets/twitch.png">
+                    </div>
+                    <div class="socials-widget middle-widget">
+                        <img class="socials-image" src="assets/stackoverflow.png">
+                    </div>
+                </div>
+                <h1 class="section-header">About Me</h1>
+                <div id="pfp-wrapper">
+                    <img id="discord-pfp" src="assets/pfp.png">
+                </div>
+                <div id="info-wrapper">
+                    <h2 class="discord-name">Discord: Soerensen#1458</h2>
+                    <p class="info">Hello, I'm Patrick "Soerensen" Sørensen. I'm a 20 year old guy from Denmark.
+                        <br>
+                        I first started taking interest in coding when I was around 15 years old.
+                        <br>
+                        I started with C# but quickly stopped again as it was too hard.
+                        <br>
+                        After 2 years I tried again and put a lot more effort into it and made some small games and programs (Don't look at them the code is horrible).
+                        <br>
+                        I moved to Malta because of a job and stopped programming for a while.
+                        <br>
+                        I started coding again now in a new language. Python!
+                        <br>
+                        Ever since I have been programming in Python and made a lot of projects, big and small!    
+                        <br>
+                        Currently I'm trying to learn HTML and CSS. I'm planning to learn more about C# and JavaScript.
+                    </p>
+                </div>
+            </div>
+            <div class="section">
+                <div class="wrapper">
+                    <h1 class="section-header">Projects</h1>
+                    <div class="inner-wrapper">
+                        <div class="button-wrapper">
+                            <a class="button-href" href="https://github.com/RealSoerensen/CSGO-AI-AIMBOT">AI Aimbot</a>
+                        </div>
+                        <div class="button-wrapper">
+                            <a class="button-href" href="https://github.com/RealSoerensen/STTS">Speech To Translated Speech</a>
+                        </div>
+                        <div class="button-wrapper">
+                            <a class="button-href" href="https://github.com/RealSoerensen/How-Drunk-Am-I">How Drunk Am I?</a>
+                        </div>
+                        <div class="button-wrapper">
+                            <a class="button-href" href="https://github.com/RealSoerensen/AutoswipeTinderBot">Tinder Bot</a>
+                        </div>
+                        <div class="button-wrapper">
+                            <a class="button-href" href="https://github.com/RealSoerensen/WallPaperChanger">Random Wallpaper Changer</a>
+                        </div>
+                        <div class="button-wrapper">
+                            <a class="button-href" href="https://github.com/RealSoerensen/Valocity-Discord-Bot">ValoCity Discord Bot</a>
+                        </div>
+                        <div class="button-wrapper">
+                            <a class="button-href" href="https://github.com/RealSoerensen/SnakeClone">Snake Clone</a>
+                        </div>
+                        <div class="button-wrapper">
+                            <a class="button-href" href="https://github.com/RealSoerensen/Casino-Discord-bot">Casino Discord Bot</a>
+                        </div>
+                        <div class="button-wrapper">
+                            <a class="button-href" href="https://github.com/RealSoerensen/Controlpanel">Controlpanel</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const container = document.getElementById("container");
+            const socialWidgets = document.getElementsByClassName("socials-widget");
+            const links = ["https://github.com/RealSoerensen", "https://twitter.com/RealSoerensen", "https://reddit.com/u/SoerensenOfficial", "https://twitch.tv/RealSoerensen", "https://stackoverflow.com/users/5982627/patrick-lykke-sørensen"];
+
+            for (var i = 0; i < socialWidgets.length; i++){
+                const link = links[i];
+                socialWidgets[i].addEventListener("click", () => {
+                    window.open(link, "_blank");
+                });
+            }
+
+            window.onresize = function(){
+                container.width = window.innerWidth;
+                container.height = window.innerHeight;
+            }
+        </script>
+    </body>
+</html>
