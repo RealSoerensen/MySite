@@ -1,9 +1,9 @@
 from flask import Flask, render_template
+from os import path
 
-app = Flask(__name__,
-    static_folder="templates/assets",
-    template_folder="templates")
-
+path = path.dirname(__file__)
+print(path)
+app = Flask(__name__, static_folder=path + "/assets", template_folder=path)
 
 @app.route("/")
 def main():
