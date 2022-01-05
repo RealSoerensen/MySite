@@ -20,19 +20,19 @@ body {
 	width: 80%;
 	margin: auto;
 	z-index: 0;
-	padding: 5px;
+  padding: 1px;
 }
 
 #header-wrapper {
-	border-radius: 24px;
+	border-radius: 8px;
 	background-color: #23272A;
-	width: auto;
+	width: 100%;
 	margin: auto;
 }
 
 #header {
 	font-family: monospace;
-	font-size: 160px;
+	font-size: 80px;
 	letter-spacing: 5px;
 	background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
   	-webkit-background-clip: text;
@@ -44,16 +44,6 @@ body {
 
 #socials-container {
 	position: absolute;
-	margin: 10px;
-}
-
-#info-wrapper{
-	border-radius: 24px;
-	background-color: #23272A;
-	width: auto;
-	height: auto;
-	margin: auto;
-	padding: 15px;
 }
 
 .left-widget {
@@ -73,10 +63,9 @@ body {
 }
 
 .socials-widget {
-	border-radius: 24px;
-	border: 8px solid grey;
-	margin: 10px;
-	padding: 15px;
+	border-radius: 8px;
+	border: 2px solid grey;
+	padding: 5px;
 	cursor: pointer;
 	display: flex;
 	justify-content: center;
@@ -97,22 +86,22 @@ body {
 	-webkit-user-drag: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
-	width: 100px;
-	height: auto;
+	width: 30px;
+	height: 30px;
 }
 
 #info-container {
-	border-radius: 24px;
+	border-radius: 8px;
 	background-color: #23272A;
 	box-sizing: border-box;
 	padding: 30px;
-	width: auto;
+	width: 100%;
 	word-wrap: break-word;
 	pointer-events: auto;
 }
 
 .section {
-	width: auto;
+	width: 100%;
 	text-align: center;
 	pointer-events: none;
 }
@@ -120,7 +109,7 @@ body {
 .section-header {
 	font-family: monospace;
 	color: white;
-	font-size: 120px;
+	font-size: 60px;
 	text-decoration: underline;
 }
 
@@ -130,14 +119,14 @@ body {
 }
 
 #discord-pfp {
-	width: auto;
+  width: 25%;
 	height: auto;
 	border-radius: 50%;
 }
 
 .discord-name {
 	font-family: "Poppins", sans-serif;
-	font-size: 60px;
+	font-size: 20px;
 	color: white;
 	text-align: center;
 	margin-top: 10px;
@@ -145,7 +134,7 @@ body {
 
 .info {
 	font-family: 'Poppins', sans-serif;
-	font-size: 45px;
+	font-size: 15px;
 	color: white;
 }
 
@@ -156,15 +145,14 @@ body {
 
 .button-wrapper {
 	margin: 50px;
-	padding: 10px;
 }
 
 .button-href {
 	font-family: 'Poppins', sans-serif;
-	font-size: 65px;
+	font-size: 25px;
 	color: white;
 	background-color: #7289DA;
-	border-radius: 36px;
+	border-radius: 10px;
 	text-decoration: none;
 	padding: 15px;
 	cursor: pointer;
@@ -176,23 +164,16 @@ body {
 }
 
 .wrapper {
-	border-radius: 24px;
+	border-radius: 8px;
 	background-color: #23272A;
 	width: 50%;
 	padding: 15px;
-	margin: 50px;
+	margin: 15px;
 	word-wrap: break-word;
 	pointer-events: auto;
 	display: inline-block;
 	box-sizing: border-box;
 	vertical-align: top;
-}
-
-.shoutout {
-	font-family: 'Poppins', sans-serif;
-	font-size: 15px;
-	color: white;
-	text-align: left;
 }
 
 ::-webkit-scrollbar {
