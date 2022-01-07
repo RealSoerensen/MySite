@@ -1,7 +1,8 @@
 import requests
 from bs4 import BeautifulSoup as bs
+import os
 
-faceit_key = "4705bf80-6714-44c7-96e0-0525c7239f1b"
+faceit_key = os.environ['faceit_key']
 
 class Stats:
     def __init__(self):
