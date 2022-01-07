@@ -162,9 +162,17 @@ body {
 	transition: background-color 0.25s ease-out;
 }
 
+.title {
+	font-family: 'Poppins', sans-serif;
+	font-size: 36px;
+	margin: 5px;
+	color: white;
+}
+
 .text-wrapper {
 	font-family: 'Poppins', sans-serif;
-	font-size: 40px;
+	font-size: 22px;
+	margin-top: 5px;
 	color: white;
 }
 
